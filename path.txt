@@ -1,2 +1,0 @@
-C:\Users\dawoo\Desktop\SF7\python
-파이썬 코드를 저장하는 폴더의 경로
