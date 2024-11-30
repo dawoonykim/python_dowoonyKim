@@ -8,6 +8,10 @@ print(rainbow)
 # 3. 좋아하는 색 맨 마지막에 추가하기
 rainbow.append("magenta")
 print(rainbow)
-# 4. 4~6 번 째 값 삭제하기
+# 4. 3~6 번 째 값 삭제하기
 del rainbow[3:7]
 print(rainbow)
+
+print(rainbow.index("magenta"))
+print(rainbow.pop())
+print(rainbow.count("red"))
