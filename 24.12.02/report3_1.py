@@ -21,18 +21,18 @@ else:
             print("남은 음료수 : ", vanding_machine)
             if todo == 1:
                 add_drink = input("추가할 음료수? ")
-                if add_drink in vanding_machine > 0:
+                if add_drink in vanding_machine:
                     index = vanding_machine.index(add_drink)
                     vanding_machine.insert(index, add_drink)
                 else:
                     vanding_machine.append(add_drink)
             elif todo == 2:
                 remove_drink = input("삭제할 음료수? ")
-                if remove_drink in vanding_machine > 0:
+                if remove_drink in vanding_machine:
                     index = vanding_machine.index(remove_drink)
                     del vanding_machine[index]
                 else:
-                    print("삭제 할 ",remove_drink,"가 없습니다.",sep="")
+                    print("삭제 할 ", remove_drink, "가 없습니다.", sep="")
 
 
 print("남은 음료수 : ", vanding_machine)
