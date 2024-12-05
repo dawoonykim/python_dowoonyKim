@@ -1,0 +1,13 @@
+# 프로그래머스 - 글자 지우기
+
+def solution(my_string, indices):
+    answer = ''
+
+    for i in range(len(my_string)):
+        if i not in indices:
+            answer += my_string[i]
+        print(answer)
+    return answer
+
+
+print(solution("apporoograpemmemprs", [1, 16, 6, 15, 0, 10, 11, 3]))
