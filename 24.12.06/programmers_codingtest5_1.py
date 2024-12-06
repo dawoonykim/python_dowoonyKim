@@ -9,18 +9,12 @@ def solution(str_list):
         if str_list[i] == "r":
             r = i
 
-    if l == -1 and r == -1:
-        return []
-    elif r > l:
+    if l != 0 and (r > l):
         return str_list[:l]
-    elif r < l:
-        return str_list[r:]
-    elif ("l" or "r") in str_list:
-        if "l" in str_list:
-            return str_list[:l]
-        else:
-            return str_list[r:]
-
+    elif r != 0 and (r < l):
+        return str_list[r+1:]
+    else:
+        return []
 
 
 print(solution(["u", "u", "l", "r"]))
