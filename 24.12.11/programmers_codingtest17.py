@@ -7,6 +7,7 @@ def solution(s):
         if s.count(i) == 1:
             answer += i
     return "".join(sorted(answer))
+    # git bash 충돌 해결
 
 
 print(solution("abcabcadc"))
