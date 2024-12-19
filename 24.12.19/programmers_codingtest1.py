@@ -1,8 +1,9 @@
 # 프로그래머스 - 다항식 더하기
 
 def solution(polynomial):
-
+    print(type(polynomial))
     polynomial = polynomial.split(" + ")
+    
     num = 0  # 다항식
     sum = 0  # 상수
 
